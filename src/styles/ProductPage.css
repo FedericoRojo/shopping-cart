@@ -1,0 +1,107 @@
+.product-page {
+    display: flex; /* Display product image and details side by side */
+    gap: 20px; /* Space between image and details */
+    max-width: 1000px; /* Maximum width for the product page */
+    margin: 20px auto; /* Center the product page on the screen */
+    padding: 20px; /* Padding around the product page */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9da; /* Light background color */
+}
+
+.product-image img {
+    width: auto; /* Responsive image */
+    max-height: 400px; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded corners for the image */
+}
+
+.product-details {
+    flex: 1; /* Take remaining space for details */
+}
+
+.product-title {
+    font-size: 1.5rem; /* Title font size */
+    margin: 0; /* Removes default margin */
+    color: #333; /* Darker color for better readability */
+}
+
+.product-description,
+.product-price {
+    margin: 10px 0; /* Space between description and price */
+    color: #666; /* Gray color for description and price */
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 20px; 
+} 
+
+.add-to-cart-container{
+    flex: 1;
+    position: relative;
+}
+
+.add-to-cart-button {
+    background-color: #A594F9; /* Green background */
+    color: white; /* White text */
+    border: none; /* Removes default border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    width: 100%;
+    margin-right: 10px; /* Space between button and quantity controls */
+    margin-top: 15px;
+}
+
+.add-to-cart-button:hover {
+    background-color: #8375cad0; /* Darker green on hover */
+}
+
+.modify-quantity {
+    display: flex; /* Horizontal alignment of quantity controls */
+    align-items: center; /* Center items vertically */
+}
+
+
+.modify-quantity p {
+    margin: 0px 10px; /* Space between the paragraph and buttons */
+    font-size: 1.2rem; /* Font size for quantity */
+}
+
+.nocart-container {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    justify-content: center;
+}
+
+.cart-message {
+    position: absolute; 
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%; 
+    left: auto; 
+    width: 97%;
+    text-align: center;
+    transform: translateY(-20px); 
+    opacity: 0;
+    animation: dropDown 0.5s forwards, fadeOut 1s 0.5s forwards; 
+  }
+  
+  @keyframes dropDown {
+    to {
+      transform: translateY(0); 
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0; 
+    }
+  }
