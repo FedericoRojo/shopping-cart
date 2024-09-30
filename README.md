@@ -6,12 +6,12 @@ This React application serves as a fully functional shopping cart, demonstrating
 
 ## Features
 
-Dynamic Product Loading: Fetches and displays products from a remote API.
-Shopping Cart Functionality: Users can easily add products to their cart, specifying desired quantities for each item.
-Cart Management: Effortlessly remove products from the cart, providing a seamless user experience.
+-**Dynamic Product Loading**: Fetches and displays products from a remote API.
+-**Shopping Cart Functionality**: Users can easily add products to their cart, specifying desired quantities for each item.
+-**Cart Management**: Effortlessly remove products from the cart, providing a seamless user experience.
 
 ## Technologies Used
 
-React: For building the user interface and managing component states.
-React Router: For handling navigation and routing within the app.
-API Integration: Utilizes fetch to retrieve product data from an external source.
+-**React**: For building the user interface and managing component states.
+-**React Router**: For handling navigation and routing within the app.
+-**API Integration**: Utilizes fetch to retrieve product data from an external source.
